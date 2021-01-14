@@ -2,8 +2,19 @@
 @import "../abstracts/variables";
 
 .btn {
+  font-size: 16px;
+  line-height: 1;
+  padding: 7px 12px;
+  @include transition(.3);
+  cursor: pointer;
+  display: inline-block;
+  border: none;
   &-primary {
-
+    background: $lightBlue;
+    color: $whiteColor;
+    &:hover {
+      background: $darkBlue;
+    }
   }
   &-secondary {
     

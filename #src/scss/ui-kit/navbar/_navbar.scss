@@ -4,6 +4,7 @@
 .navbar {
   @include transition(.3);
   margin-left: auto;
+  display: flex;
   @media (max-width: $breakpoint-xl) {
     position: fixed;
     width: 100%;

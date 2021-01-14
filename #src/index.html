@@ -1,6 +1,43 @@
 @@include('_header.html')
 <main>
-  MAIN CONTENT
+  <section class="home-search">
+    <div class="container">
+      <div class="row">
+        <div class="search-component">
+          <form action="">
+            <h2>Expert Search</h2>
+            <p>Access our database of hundreds of top professionals across Canada.</p>
+            <div class="search-component-fields">
+              <div class="search-component-text form-control">
+                <i class="icon-icon-search"></i>
+                <input type="search" name="search" placeholder="Search by specialty or expert’s name">
+              </div>
+              <div class="search-component-select form-select">
+                <i class="icon-icon-marker"></i>
+                <select name="search-province">
+                  <option selected>Province Licensed</option>
+                  <option value="Alberta">Alberta</option>
+                  <option value="British Columbia">British Columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Northwest Territories">Northwest Territories</option>
+                  <option value="Nunavut">Nunavut</option>
+                  <option value="Yukon">Yukon</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary search-component-button">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 @@include('_footer.html')

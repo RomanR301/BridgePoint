@@ -1,3 +1,10 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.home-search {
+  background: $lightGrey;
+  min-height: calc(100vh - 118px);
+  & .search-component {
+    margin-top: 245px;
+  }
+}

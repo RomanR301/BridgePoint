@@ -1,0 +1,45 @@
+.search-component {
+  width: 100%;
+  & h2 {
+    font-size: 24px;
+    color: $darkBlue;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &-fields {
+    display: flex;
+    height: 60px;
+    margin-top: 37px;
+    & i {
+      position: absolute;
+      left: 24px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    & input, & select {
+      height: 100%;
+      width: 100%;
+      padding-left: 62px;
+      border-radius: 0;
+      border: none;
+      font-size: inherit;
+      font-family: inherit;
+      color: $defaultText;
+    }
+  }
+  &-text{
+    width: 60%;
+    height: 100%;
+  }
+  &-select {
+    width: 30%;
+    height: 100%;
+    border-left: 2px solid #D1D1D1;
+
+  }
+  &-button {
+    width: 10%;
+    height: 100%;
+  }
+ 
+}
