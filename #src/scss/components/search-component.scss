@@ -6,12 +6,18 @@
     font-weight: 700;
     margin-bottom: 10px;
   }
+  & p {
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+  }
   &-fields {
     display: flex;
     height: 60px;
     margin-top: 37px;
     @media (max-width: $breakpoint-lg) {
       flex-direction: column;
+      height: unset;
     }
     & i {
       position: absolute;
@@ -20,19 +26,6 @@
       transform: translate(0, -50%);
       @media (max-width: $breakpoint-xl) {
         left: 14px;
-      }
-    }
-    & input, & select {
-      height: 100%;
-      width: 100%;
-      padding-left: 62px;
-      border-radius: 0;
-      border: none;
-      font-size: inherit;
-      font-family: inherit;
-      color: $defaultText;
-      @media (max-width: $breakpoint-xl) {
-        padding: 0 40px;
       }
     }
   }
@@ -63,6 +56,61 @@
       height: 50px;
       min-height: 50px;
       width: 125px;
+    }
+  }
+  &-filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    @media (max-width: $breakpoint-xl) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 36px;
+    }
+    & .filters-sort {
+      width: 370px;
+      position: relative;
+      @media (max-width: $breakpoint-xl) {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+      & label {
+        position: absolute;
+        top: -30px;
+        font-weight: 700;
+        @media (max-width: $breakpoint-xl) {
+          position: static;
+          margin-bottom: 8px;
+          display: block;
+        }
+      }
+      & .form-select {
+        height: 40px;
+      }
+      & select {
+        padding: 0 15px 0 24px;
+      }
+    }
+  }
+  & .filters-reset {
+    @media (max-width: $breakpoint-xl) {
+      margin-top: 10px;
+    }
+  }
+  & .filters-reset-btn {
+    border: none;
+    background: none;
+    color: $lightBlue;
+    border-bottom: 1px solid $lightBlue;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    @include transition(.3);
+    &:hover {
+      color: $darkBlue;
+      border-color: $darkBlue;
     }
   }
 }
