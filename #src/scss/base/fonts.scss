@@ -27,17 +27,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon-rounded-envelope:before {
-  content: "\e906";
-  color: #fff;
+.icon-rounded-envelope:before {
+  content: '';
+  display: block;
+  background-image: url('../../img/icon-rounded-envelope.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
-.icon-icon-rounded-globe:before {
-  content: "\e907";
-  color: #fff;
+.icon-rounded-globe:before {
+  content: '';
+  display: block;
+  background-image: url('../../img/icon-rounded-globe.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
-.icon-icon-rounded-phone:before {
-  content: "\e908";
-  color: #fff;
+.icon-rounded-phone:before {
+  content: '';
+  display: block;
+  background-image: url('../../img/icon-rounded-phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
 .icon-icon-arrow:before {
   content: "\e900";

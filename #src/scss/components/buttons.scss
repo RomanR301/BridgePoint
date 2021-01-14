@@ -19,4 +19,18 @@
   &-secondary {
     
   }
+  &-link {
+    color: $lightBlue;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $lightBlue;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    @include transition(.3);
+    &:hover {
+      color: $darkBlue;
+      border-color: $darkBlue;
+    }
+  }
 }

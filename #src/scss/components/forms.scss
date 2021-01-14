@@ -44,6 +44,7 @@
     position: absolute;
     right: 26px;
     top: 50%;
+    pointer-events: none;
     transform: translate(0, -50%);
     @media (max-width: $breakpoint-xl) {
       right: 15px;

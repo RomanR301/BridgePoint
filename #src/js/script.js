@@ -2,6 +2,8 @@ let front = {
   hamburger: $('.hamburger'),
   nav: $('.navbar'),
   $body: $('body'),
+  userIcon: $('.header-user'),
+  userMenu: $('.header-user-menu'),
   init: function () {
       this.events();
   },
@@ -16,6 +18,15 @@ let front = {
             // this.$body.removeClass('active')
         }
     },
+    toggleLogin: function () {
+        if (!this.userIcon.hasClass('open')) {
+            this.userIcon.addClass('open');
+            this.userMenu.toggleClass('active');
+            } else {
+                this.userIcon.removeClass('open');
+                this.userMenu.toggleClass('active');
+            }
+        },
 
 
   openTab: function (element, tabName, parent) {
@@ -55,6 +66,9 @@ let front = {
       let self = this;
       $(document).on('click', '.hamburger', function () {
           self.toggleNav();
+      });
+      $(document).on('click', '.header-user', function () {
+          self.toggleLogin();
       });
   }
 };
