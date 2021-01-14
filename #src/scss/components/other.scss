@@ -1,3 +1,13 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+
+.line {
+  width: 100%;
+  background: #D8D8D8;
+  height: 1px;
+  margin: 30px 0;
+  @media (max-width: $breakpoint-lg) {
+    margin: 20px 0;
+  }
+}

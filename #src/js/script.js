@@ -9,11 +9,11 @@ let front = {
     if (!this.hamburger.hasClass('open')) {
         this.hamburger.addClass('open');
         this.nav.toggleClass('active');
-        this.$body.addClass('active')
+        // this.$body.addClass('active')
         } else {
             this.hamburger.removeClass('open');
             this.nav.toggleClass('active');
-            this.$body.removeClass('active')
+            // this.$body.removeClass('active')
         }
     },
 

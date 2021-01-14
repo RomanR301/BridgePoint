@@ -19,5 +19,8 @@
     right: 26px;
     top: 50%;
     transform: translate(0, -50%);
+    @media (max-width: $breakpoint-xl) {
+      right: 15px;
+    }
   }
 }
