@@ -12,6 +12,9 @@
   }
   &-result {
     padding-top: 70px;
+    @media (max-width: $breakpoint-md) {
+      padding-top: 35px;
+    }
     &-title {
       margin-bottom: 22px;
       font-size: 18px;

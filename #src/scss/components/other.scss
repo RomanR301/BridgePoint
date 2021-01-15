@@ -10,4 +10,18 @@
   @media (max-width: $breakpoint-lg) {
     margin: 20px 0;
   }
+  &.--search-profile {
+    margin: 25px 0 50px 0;
+  }
+  &.--experts__item_separator {
+    width: unset;
+    margin: 50px 15px;
+  }
+  &.--expert {
+    margin: 56px 15px;
+    width: unset;
+    @media (max-width: $breakpoint-md) {
+      margin: 35px 0;
+    }
+  }
 }

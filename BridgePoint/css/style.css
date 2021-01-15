@@ -30,8 +30,8 @@
   background-image: url("../../img/icon-rounded-envelope.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 10px;
 }
 
 .icon-rounded-globe:before {
@@ -40,8 +40,8 @@
   background-image: url("../../img/icon-rounded-globe.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .icon-rounded-phone:before {
@@ -50,8 +50,8 @@
   background-image: url("../../img/icon-rounded-phone.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20px;
-  height: 20px;
+  width: 11px;
+  height: 18px;
 }
 
 .icon-icon-arrow:before {
@@ -143,7 +143,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -367,6 +366,75 @@ input[type=number] {
   border-color: #014F82;
 }
 
+.btn-file {
+  color: #ffffff;
+  width: 220px;
+  height: 36px;
+  padding: 3px 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-file:before {
+  font-family: 'icomoon';
+  content: "\e902";
+  color: #fefefe;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-darkBlue {
+  background: #014F82;
+  border: 2px solid #014F82;
+}
+
+.btn-darkBlue:hover {
+  background: #ffffff;
+  color: #014F82;
+}
+
+.btn-darkBlue:hover:before {
+  color: #014F82;
+}
+
+.btn-lightBlue {
+  background: #009ADE;
+  border: 2px solid #009ADE;
+}
+
+.btn-lightBlue:hover {
+  background: #ffffff;
+  color: #009ADE;
+}
+
+.btn-lightBlue:hover:before {
+  color: #009ADE;
+}
+
+.btn-grey {
+  background: #707070;
+  border: 2px solid #707070;
+}
+
+.btn-grey:hover {
+  background: #ffffff;
+  color: #707070;
+}
+
+.btn-grey:hover:before {
+  color: #707070;
+}
+
 .search-component {
   width: 100%;
 }
@@ -565,6 +633,20 @@ input[type=number] {
   background: #D8D8D8;
   height: 1px;
   margin: 30px 0;
+}
+
+.line.--search-profile {
+  margin: 25px 0 50px 0;
+}
+
+.line.--experts__item_separator {
+  width: unset;
+  margin: 50px 15px;
+}
+
+.line.--expert {
+  margin: 56px 15px;
+  width: unset;
 }
 
 .container {
@@ -1154,6 +1236,19 @@ input[type=number] {
   padding: 75px 0;
 }
 
+.search-profile.--expert .search-profile-list {
+  margin-top: 0;
+}
+
+.search-profile.--expert .search-profile-list__container {
+  margin: 40px 0 60px 0;
+}
+
+.search-profile.--expert .experts__skills {
+  width: 30%;
+  margin: 30px 0;
+}
+
 .search-profile-header {
   padding: 75px 0;
   background: #F6F6F6;
@@ -1168,13 +1263,13 @@ input[type=number] {
 }
 
 .search-profile__main {
+  margin: 0 15px 48px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 48px;
 }
 
 .search-profile__image {
@@ -1206,6 +1301,10 @@ input[type=number] {
   color: #009ADE;
 }
 
+.search-profile__about {
+  width: 75%;
+}
+
 .search-profile__about .about-title {
   font-size: 24px;
   color: #014F82;
@@ -1213,11 +1312,41 @@ input[type=number] {
   margin-bottom: 10px;
 }
 
-.search-profile-contacts__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.search-profile__about .about-content p {
   margin-bottom: 20px;
+}
+
+.search-profile__about .about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.search-profile-download-btn {
+  margin-top: 30px;
+}
+
+.search-profile-contacts {
+  width: 25%;
+}
+
+.search-profile-contacts__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #014F82;
+  font-size: 14px;
+}
+
+.search-profile-contacts__item:hover .contacts-icon {
+  background: #014F82;
+}
+
+.search-profile-contacts__item:first-child {
+  font-size: 18px;
 }
 
 .search-profile-contacts__item:last-child {
@@ -1238,11 +1367,195 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 100%;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .view-experts-btn {
   border-radius: 15px;
+  padding: 7px 24px;
+}
+
+.view-experts-btn-container {
+  padding-left: 15px;
+  width: 25%;
   margin-left: auto;
+}
+
+.search-profile-list {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.search-profile-list__icon {
+  margin-bottom: 12px;
+  display: block;
+}
+
+.search-profile-list__title {
+  color: #014F82;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.search-profile-list ul {
+  margin-bottom: 15px;
+}
+
+.search-profile__experts {
+  background: #F6F6F6;
+  padding: 50px 0;
+}
+
+.experts__header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #D1D1D1;
+}
+
+.experts__title {
+  font-size: 24px;
+  color: #014F82;
+  font-weight: 700;
+}
+
+.experts__title span {
+  color: #009ADE;
+  font-weight: 700;
+}
+
+.experts__item {
+  margin: 0;
+}
+
+.experts__card {
+  padding: 35px;
+  background: #ffffff;
+}
+
+.experts__card strong {
+  display: block;
+  font-weight: 600;
+}
+
+.experts__card .line {
+  margin: 20px 0;
+}
+
+.experts__image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+
+.experts__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.experts__name {
+  font-size: 21px;
+  color: #014F82;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.experts__specialities {
+  margin-bottom: 15px;
+}
+
+.experts__about {
+  padding: 45px 30px;
+  background: #ffffff;
+}
+
+.experts__about_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #014F82;
+  margin-bottom: 15px;
+}
+
+.experts__text {
+  margin-bottom: 40px;
+}
+
+.experts__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.experts__buttons .btn-file {
+  margin-right: 20px;
+}
+
+.experts__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.experts__skills {
+  width: 45%;
+  margin-right: 45px;
+}
+
+.experts__skills .skills-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.experts__skills .skills-item:last-child {
+  margin-bottom: 0;
+}
+
+.experts__skills .skills-item__key {
+  font-weight: 600;
+}
+
+.experts__skills .skills-item__value {
+  font-weight: 600;
+  color: #009ADE;
+}
+
+.experts__info {
+  width: 45%;
+}
+
+.experts__info .info-item {
+  margin-bottom: 20px;
+}
+
+.experts__info .info-item:last-child {
+  margin-bottom: 0;
+}
+
+.experts__info .info-item__key {
+  font-weight: 700;
+}
+
+.search-profile__download {
+  margin: 50px 0 30px 0;
 }
 
 @media (min-width: 576px) {
@@ -1783,6 +2096,68 @@ input[type=number] {
   .home-search .search-component {
     margin-top: 50px;
   }
+
+  .search-profile__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    margin: 0 15px 20px 15px;
+  }
+
+  .search-profile__name {
+    font-size: 24px;
+  }
+
+  .search-profile__description {
+    font-size: 16px;
+  }
+
+  .search-profile__about {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .search-profile__about .about-title {
+    font-size: 18px;
+  }
+
+  .search-profile-contacts {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .view-experts-btn-container {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: unset;
+  }
+
+  .search-profile-list {
+    margin-top: 30px;
+  }
+
+  .experts__card {
+    padding: 35px 14px 30px 14px;
+  }
+
+  .experts__about {
+    padding: 0 14px 46px 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1796,6 +2171,10 @@ input[type=number] {
 
   .filters-toggler label:first-child {
     font-size: 14px;
+  }
+
+  .line.--expert {
+    margin: 35px 0;
   }
 
   .container {
@@ -1817,6 +2196,10 @@ input[type=number] {
   }
 
   .p-0 {
+    padding: 0;
+  }
+
+  .column {
     padding: 0;
   }
 
@@ -1845,6 +2228,98 @@ input[type=number] {
   .filters {
     padding: 50px 0;
   }
+
+  .filters-result {
+    padding-top: 35px;
+  }
+
+  .search-profile {
+    padding: 30px 0;
+  }
+
+  .search-profile.--expert .search-profile-list__container {
+    margin: 30px 0;
+  }
+
+  .search-profile.--expert .experts__skills {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .search-profile.--expert .search-profile-download-btn {
+    margin: 30px 0 0 0;
+  }
+
+  .search-profile-header {
+    padding: 50px 0;
+  }
+
+  .search-profile__main {
+    margin: 0 0 20px 0;
+  }
+
+  .search-profile-download-btn {
+    margin: 30px 15px 0 15px;
+  }
+
+  .search-profile-list ul {
+    margin-bottom: 0;
+  }
+
+  .search-profile__experts {
+    padding: 30px 0;
+  }
+
+  .experts__header {
+    margin: 15px 0 40px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .experts__title {
+    margin-bottom: 20px;
+  }
+
+  .experts__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .experts__buttons .btn-file {
+    margin: 0 0 15px 0;
+  }
+
+  .experts__data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .experts__skills {
+    margin: 0 0 30px 0;
+  }
+
+  .experts__skills .skills-item {
+    margin-bottom: 10px;
+  }
+
+  .experts__info {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .experts__info .info-item {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1852,8 +2327,16 @@ input[type=number] {
     margin: 0 !important;
   }
 
-  .column {
-    padding: 0;
+  .search-profile-download-btn {
+    margin: 30px 0 0 0;
+  }
+
+  .experts__header {
+    margin: 0 0 40px 0;
+  }
+
+  .experts__skills {
+    width: 100%;
   }
 }
 

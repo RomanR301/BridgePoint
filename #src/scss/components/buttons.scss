@@ -34,3 +34,57 @@
     }
   }
 }
+
+.btn-file {
+  color: $whiteColor;
+  width: 220px;
+  height: 36px;
+  padding: 3px 8px;
+  cursor: pointer;
+  @include transition(.3);
+  display: flex;
+  align-items: center;
+  &:before {
+    font-family: 'icomoon';
+    content: "\e902";
+    color: #fefefe;
+    margin-right: 5px;
+    @include transition(.3);
+  }
+}
+
+.btn-darkBlue {
+  background: $darkBlue;
+  border: 2px solid $darkBlue;
+  &:hover {
+    background: $whiteColor;
+    color: $darkBlue;
+    &:before {
+      color: $darkBlue;
+    }
+  }
+}
+
+.btn-lightBlue {
+  background: $lightBlue;
+  border: 2px solid $lightBlue;
+  &:hover {
+    background: $whiteColor;
+    color: $lightBlue;
+    &:before {
+      color: $lightBlue;
+    }
+  }
+}
+
+.btn-grey {
+  background: #707070;
+  border: 2px solid #707070;
+  &:hover {
+    background: $whiteColor;
+    color: #707070;
+    &:before {
+      color: #707070;
+    }
+  }
+}
