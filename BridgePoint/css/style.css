@@ -27,7 +27,7 @@
 .icon-rounded-envelope:before {
   content: '';
   display: block;
-  background-image: url("../../img/icon-rounded-envelope.svg");
+  background-image: url("../img/icon-rounded-envelope.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
@@ -37,7 +37,7 @@
 .icon-rounded-globe:before {
   content: '';
   display: block;
-  background-image: url("../../img/icon-rounded-globe.svg");
+  background-image: url("../img/icon-rounded-globe.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
@@ -47,7 +47,7 @@
 .icon-rounded-phone:before {
   content: '';
   display: block;
-  background-image: url("../../img/icon-rounded-phone.svg");
+  background-image: url("../img/icon-rounded-phone.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 11px;
