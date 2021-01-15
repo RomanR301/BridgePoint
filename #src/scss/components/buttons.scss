@@ -2,7 +2,7 @@
 @import "../abstracts/variables";
 
 .btn {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   padding: 7px 12px;
   @include transition(.3);
@@ -44,6 +44,7 @@
   @include transition(.3);
   display: flex;
   align-items: center;
+  font-size: 14px;
   &:before {
     font-family: 'icomoon';
     content: "\e902";

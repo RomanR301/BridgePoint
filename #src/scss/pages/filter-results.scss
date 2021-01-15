@@ -58,6 +58,9 @@
       @include text-ellipsis(5);
     } 
     &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       margin-top: 25px;
       height: 36px;
