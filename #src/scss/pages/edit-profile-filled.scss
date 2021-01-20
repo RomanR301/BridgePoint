@@ -130,12 +130,12 @@
         }
       }
       &:before {
-        background-image: url('../../img/icon-edit.svg')
+        background-image: url('../img/icon-edit.svg')
       }
     }
     &__remove {
       &:before {
-        background-image: url('../../img/icon-remove.svg')
+        background-image: url('../img/icon-remove.svg')
       }
       background: #E02020;
       &:hover {

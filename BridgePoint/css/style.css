@@ -1868,7 +1868,7 @@ input[type=number] {
 }
 
 .edit-roster .roster-item__edit:before {
-  background-image: url("../../img/icon-edit.svg");
+  background-image: url("../img/icon-edit.svg");
 }
 
 .edit-roster .roster-item__remove {
@@ -1876,7 +1876,7 @@ input[type=number] {
 }
 
 .edit-roster .roster-item__remove:before {
-  background-image: url("../../img/icon-remove.svg");
+  background-image: url("../img/icon-remove.svg");
 }
 
 .edit-roster .roster-item__remove:hover {
