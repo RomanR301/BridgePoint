@@ -1,0 +1,160 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.edit {
+  &-page {
+    background: #F6F6F6;
+    padding: 75px 0;
+  }
+  &-profile {
+    & legend {
+      margin-bottom: 13px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__main {
+      background: $whiteColor;
+      padding: 30px;
+      &_toggler {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        & label:first-child {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+    &__avatar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      & .edit-profile-image-btn {
+        margin-left: 25px;
+        color: #777777;
+        line-height: 1;
+        border-bottom: 1px solid #777777;
+        cursor: pointer;
+      }
+    }
+    &__additional {
+      background: $whiteColor;
+      padding: 30px;
+    }
+    &__save {
+      width: 220px;
+      height: 46px;
+      margin-top: 30px; 
+      &[disabled="disabled"] {
+        background: #D1D1D1;
+      }
+    }
+  }
+  &-roster {
+    &__heading {
+      margin: 75px 0 50px 0;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      & .section-title {
+        margin-right: 20px;
+      }
+      & .btn {
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 5px 18px;
+        &:before {
+          content: '';
+          background-image: url('../img/icon-plus.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 20px;
+          height: 20px;
+          display: block;
+          margin-right: 14px;
+        }
+      }
+    }
+    &__list {
+      width: 100%;
+      background: $whiteColor;
+      padding: 25px 0 80px 0;
+      &_header {
+        display: flex;
+        align-items: center;
+        padding: 0 25px 15px 10%;
+        border-bottom: 1px solid #D1D1D1;
+      }
+      &_sort {
+        background: none;
+        border: none;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: $defaultText;
+        margin-right: 15%;
+        cursor: pointer;
+        &:after {
+          content: "\e900";
+          font-family: 'icomoon';
+          margin-left: 20px;
+          color: $lightBlue;
+        }
+      }
+    }
+  }
+}
+
+
+
+.avatar-wrapper{
+	position: relative;
+	height: 100px;
+	width: 100px;
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
+  transition: all .3s ease;
+	&:hover{
+		transform: scale(1.05);
+		cursor: pointer;
+	}
+	&:hover .profile-pic{
+		opacity: .5;
+	}
+	.profile-pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: all .3s ease;
+    object-fit: cover;
+	}
+	.upload-button {
+		position: absolute;
+		top: 0; left: 0;
+		height: 100%;
+		width: 100%;
+		.fa-arrow-circle-up{
+			position: absolute;
+			font-size: 234px;
+			top: -17px;
+			left: 0;
+			text-align: center;
+			opacity: 0;
+			transition: all .3s ease;
+			color: #34495e;
+		}
+		&:hover .fa-arrow-circle-up{
+			opacity: .9;
+		}
+  }
+  & .file-upload {
+    display: none;
+  }
+}

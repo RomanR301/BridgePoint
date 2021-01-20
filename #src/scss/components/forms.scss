@@ -122,3 +122,49 @@
   }
   
 }
+
+
+
+.form-group {
+  margin-bottom: 20px;
+  &-multiple {
+    display: flex; 
+    flex-wrap: nowrap;
+    & .form-group {
+      &:first-child {
+        width: 50%;
+      }
+      width: 23%;
+      margin: 0 10px 0 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    & select {
+      height: 45px;
+      padding: 10px 24px 10px 10px;
+    }
+    & .form-select {
+      &:after {
+        right: 8px;
+        top: 52px;
+      }
+    }
+  }
+  & label {
+    display: block;
+    margin-bottom: 7px;
+    color: #777777; 
+  }
+  & input, & textarea, & select {
+    border: 1px solid #D1D1D1;
+    background: transparent;
+    padding: 10px 10px;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  & textarea {
+
+  }
+}

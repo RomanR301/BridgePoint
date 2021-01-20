@@ -327,6 +327,12 @@ input[type=number] {
   line-height: 1.5;
 }
 
+.section-title {
+  color: #014F82;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .btn {
   font-size: 14px;
   line-height: 1;
@@ -640,6 +646,58 @@ input[type=number] {
   border-radius: 50%;
 }
 
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-multiple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.form-group-multiple .form-group {
+  width: 23%;
+  margin: 0 10px 0 0;
+}
+
+.form-group-multiple .form-group:first-child {
+  width: 50%;
+}
+
+.form-group-multiple .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group-multiple select {
+  height: 45px;
+  padding: 10px 24px 10px 10px;
+}
+
+.form-group-multiple .form-select:after {
+  right: 8px;
+  top: 52px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #777777;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  border: 1px solid #D1D1D1;
+  background: transparent;
+  padding: 10px 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .line {
   width: 100%;
   background: #D8D8D8;
@@ -720,6 +778,10 @@ input[type=number] {
 
 .w-100 {
   width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mb-24 {
@@ -1576,6 +1638,223 @@ input[type=number] {
 
 .search-profile__download {
   margin: 50px 0 30px 0;
+}
+
+.edit-page {
+  background: #F6F6F6;
+  padding: 75px 0;
+}
+
+.edit-profile legend {
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.edit-profile__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.edit-profile__main {
+  background: #ffffff;
+  padding: 30px;
+}
+
+.edit-profile__main_toggler {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.edit-profile__main_toggler label:first-child {
+  margin: 0 0 0 20px;
+}
+
+.edit-profile__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.edit-profile__avatar .edit-profile-image-btn {
+  margin-left: 25px;
+  color: #777777;
+  line-height: 1;
+  border-bottom: 1px solid #777777;
+  cursor: pointer;
+}
+
+.edit-profile__additional {
+  background: #ffffff;
+  padding: 30px;
+}
+
+.edit-profile__save {
+  width: 220px;
+  height: 46px;
+  margin-top: 30px;
+}
+
+.edit-profile__save[disabled="disabled"] {
+  background: #D1D1D1;
+}
+
+.edit-roster__heading {
+  margin: 75px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.edit-roster__heading .section-title {
+  margin-right: 20px;
+}
+
+.edit-roster__heading .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  padding: 5px 18px;
+}
+
+.edit-roster__heading .btn:before {
+  content: '';
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 14px;
+}
+
+.edit-roster__list {
+  width: 100%;
+  background: #ffffff;
+  padding: 25px 0 80px 0;
+}
+
+.edit-roster__list_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px 15px 10%;
+  border-bottom: 1px solid #D1D1D1;
+}
+
+.edit-roster__list_sort {
+  background: none;
+  border: none;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #555555;
+  margin-right: 15%;
+  cursor: pointer;
+}
+
+.edit-roster__list_sort:after {
+  content: "\e900";
+  font-family: 'icomoon';
+  margin-left: 20px;
+  color: #009ADE;
+}
+
+.avatar-wrapper {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.avatar-wrapper:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.avatar-wrapper:hover .profile-pic {
+  opacity: .5;
+}
+
+.avatar-wrapper .profile-pic {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.avatar-wrapper .upload-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.avatar-wrapper .upload-button .fa-arrow-circle-up {
+  position: absolute;
+  font-size: 234px;
+  top: -17px;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #34495e;
+}
+
+.avatar-wrapper .upload-button:hover .fa-arrow-circle-up {
+  opacity: .9;
+}
+
+.avatar-wrapper .file-upload {
+  display: none;
 }
 
 @media (min-width: 576px) {
