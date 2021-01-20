@@ -63,7 +63,7 @@
     </div>
   </header>
   <div class="body-padding"></div>
-<main class="edit-page edit-company">
+<main class="edit-page edit-company edit-page-filled">
   <section class="edit-profile">
     <form action="">
       <div class="container">
@@ -76,11 +76,11 @@
           </div>
         </div>
         <div class="row m-0">
-          <div class="col-lg-6 col-md-12 column">
+          <div class="col-lg-6 col-xs-12 column">
             <div class="edit-profile__main">
               <div class="edit-profile__avatar">
                 <div class="avatar-wrapper">
-                  <img class="profile-pic" src="./img/profile-image.svg" />
+                  <img class="profile-pic" src="./img/filters-item-image-company.png" />
                   <div class="upload-button">
                   </div>
                   <input class="file-upload" type="file" accept="image/*" />
@@ -93,20 +93,56 @@
                 <legend>Company Information</legend>
                 <div class="form-group">
                   <label for="company_name">Company Name</label>
-                  <input type="text" name="company_name" id="company_name">
+                  <p>AssessMed Inc.</p>
                 </div>
                 <div class="form-group">
                   <label for="company_description">Description (up to XXX characters)</label>
-                  <input type="text" name="company_description" id="company_description"
-                    placeholder="i.e. Independent Medical Evaluation Provider">
+                  <p>Independent Medical Evaluation Provider</p>
                 </div>
                 <div class="form-group">
                   <label for="company_about">About (up to XXX characters)</label>
-                  <textarea name="" id="company_about" rows="10" name="company_about"></textarea>
+                  <p>Mus vendessim quissec tatibus sum sunt vellaborepe eatur magnist, sit enis esectes tionseque quis
+                    dolendipicid quatum volore cuscita temqui ad erferci aspite pore conserum qui nus et lacepero bea
+                    con es cupta dolupta tiasped qui nonsequae. Uptat dolorem. Nequi untotae inis es as ea vendios aut
+                    ex et asi doloreicto tem num facias quam quo consequ iaerit et as hit ra ni ommolor empore cus aut
+                    as autecup tintus incilia quodisitium harum incita perum imusant etusam, soluptatem idit quibus,
+                    apietur, conecusam re volorios miligentem veliqui ssimi.</p>
                 </div>
                 <div class="form-group">
                   <label for="company_specialities">Specialities</label>
-                  <input type="text" name="company_specialities" id="company_specialities" placeholder="i.e. Neurology">
+                  <p>Physiotherapy</p>
+                </div>
+                <div class="form-group">
+                  <div class="tags-list">
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Cardiology</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Chiropractic</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Neurology</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Neurosurgery</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Occupational Therapy</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Orthopaedic Surgeon</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Psychology</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="filters-toggler edit-profile__main_toggler">
                   <label for="virtual_assessment_capability">Virtual Assessment Capability</label>
@@ -117,52 +153,67 @@
                 </div>
                 <div class="form-group">
                   <label for="locations">Location(s)</label>
-                  <input type="text" name="company_location" id="company_location" placeholder="i.e. Toronto">
+                  <p>Toronto</p>
+                </div>
+                <div class="form-group">
+                  <div class="tags-list">
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Calgary</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Mississauga</span>
+                    </div>
+                    <div class="tags__item">
+                      <button class="tags__remove">+</button>
+                      <span>Moncton</span>
+                    </div>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="company_regions_served">Region(s) Served</label>
-                  <textarea name="" id="company_regions_served" rows="4" name="company_about"
-                    placeholder="i.e. Description of regions served"></textarea>
+                  <p>Offering services across Canada, with offices in Ottawa, Toronto, London, Hamilton, Mississauga,
+                    Montreal, Quebec City, St. John's, Edmonton, and Vancouver.</p>
                 </div>
               </fieldset>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 column">
+          <div class="col-lg-6 col-xs-12 column">
             <div class="edit-profile__additional">
               <fieldset>
                 <legend>Contact Information</legend>
                 <div class="form-group">
                   <label for="company_number">Phone Number</label>
-                  <input type="tel" name="company_number" id="company_number" placeholder="1 ### ### ####">
+                  <p>1 800 987 6543</p>
                 </div>
                 <div class="form-group">
                   <label for="company_email">Email Address</label>
-                  <input type="email" name="company_email" id="company_email">
+                  <p>pcummins@assessmed.com</p>
                 </div>
                 <div class="form-group">
                   <label for="company_website">Website</label>
-                  <input type="text" name="company_website" id="company_website">
+                  <p>https://www.assessmed.com</p>
                 </div>
                 <div class="form-group">
                   <label for="company_contact_person">Contact Person</label>
-                  <input type="text" name="company_contact_person" id="company_contact_person"
-                    placeholder="Name of person to manage law firm inquiries">
+                  <p>Patricia Cummins</p>
                 </div>
               </fieldset>
               <fieldset class="mt-20">
                 <legend>Primary Address</legend>
                 <div class="form-group">
                   <label for="company_address_1">Address 1</label>
-                  <input type="text" name="company_address_1" id="company_address_1">
+                  <p>5945 Airport Road</p>
                 </div>
                 <div class="form-group">
                   <label for="company_address_2">Address 2</label>
-                  <input type="text" name="company_address_2" id="company_address_2">
+                  <p>Suite 335</p>
                 </div>
                 <div class="form-group-multiple">
                   <div class="form-group">
                     <label for="company_city">City</label>
-                    <input type="text" name="company_city" id="company_city">
+                    <p>Mississauga</p>
                   </div>
                   <div class="form-group form-select">
                     <label for="company_province">Province</label>
@@ -173,14 +224,14 @@
                   </div>
                   <div class="form-group">
                     <label for="company_postal_code">Postal Code</label>
-                    <input type="number" name="company_postal_code" id="company_postal_code">
+                    <p>L4V 1R9</p>
                   </div>
                 </div>
               </fieldset>
             </div>
           </div>
           <div class="col-md-12 column">
-            <button type="submit" class="edit-profile__save btn btn-primary" disabled="disabled">Save Profile</button>
+            <button type="submit" class="edit-profile__save btn btn-primary">Save Profile</button>
           </div>
         </div>
       </div>
@@ -193,7 +244,7 @@
           <div class="edit-roster__heading">
             <div class="section-title">Expert Roster</div>
             <button class="btn btn-primary">
-              Add Expert Profile
+              <span>Add Expert Profile</span>
             </button>
           </div>
         </div>
@@ -203,6 +254,67 @@
               <button class="edit-roster__list_sort" id="sort-name">Expert Name</button>
               <button class="edit-roster__list_sort" id="sort-speciality">Speciality</button>
             </div>
+            <div class="edit-roster__item">
+              <div class="roster-item__image">
+                <img src="./img/person3.png" alt="">
+              </div>
+              <div class="roster-item__name">
+                Stephen Pauwels
+              </div>
+              <div class="roster-item__speciality">
+                Neurology
+              </div>
+              <div class="roster-item__buttons">
+                <div class="btn roster-item__edit"><span>Edit</span></div>
+                <div class="btn roster-item__remove"><span>Remove</span></div>
+              </div>
+            </div>
+            <div class="edit-roster__item">
+              <div class="roster-item__image">
+                <img src="./img/person3.png" alt="">
+              </div>
+              <div class="roster-item__name">
+                Stephen Pauwels
+              </div>
+              <div class="roster-item__speciality">
+                Neurology
+              </div>
+              <div class="roster-item__buttons">
+                <div class="btn roster-item__edit"><span>Edit</span></div>
+                <div class="btn roster-item__remove"><span>Remove</span></div>
+              </div>
+            </div>
+            <div class="edit-roster__item">
+              <div class="roster-item__image">
+                <img src="./img/person3.png" alt="">
+              </div>
+              <div class="roster-item__name">
+                Stephen Pauwels
+              </div>
+              <div class="roster-item__speciality">
+                Neurology
+              </div>
+              <div class="roster-item__buttons">
+                <div class="btn roster-item__edit"><span>Edit</span></div>
+                <div class="btn roster-item__remove"><span>Remove</span></div>
+              </div>
+            </div>
+            <div class="edit-roster__item">
+              <div class="roster-item__image">
+                <img src="./img/person3.png" alt="">
+              </div>
+              <div class="roster-item__name">
+                Stephen Pauwels longer name
+              </div>
+              <div class="roster-item__speciality">
+                Neurology
+              </div>
+              <div class="roster-item__buttons">
+                <div class="btn roster-item__edit"><span>Edit</span></div>
+                <div class="btn roster-item__remove"><span>Remove</span></div>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="row">

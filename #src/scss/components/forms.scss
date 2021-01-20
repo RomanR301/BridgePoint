@@ -130,23 +130,36 @@
   &-multiple {
     display: flex; 
     flex-wrap: nowrap;
+    @media (max-width: $breakpoint-xl) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     & .form-group {
       &:first-child {
         width: 50%;
+        @media (max-width: $breakpoint-xl) {
+          width: 100%;
+        }
       }
       width: 23%;
       margin: 0 10px 0 0;
+      @media (max-width: $breakpoint-xl) {
+        width: 47%;
+        margin: 0 0 20px 0;
+      }
       &:last-child {
         margin-right: 0;
       }
     }
     & select {
       height: 45px;
-      padding: 10px 24px 10px 10px;
     }
     & .form-select {
+      & select {
+        padding: 10px 28px 10px 10px;
+      }
       &:after {
-        right: 8px;
+        right: 12px;
         top: 52px;
       }
     }
