@@ -6,9 +6,9 @@
         <div class="row">
           <div class="edit-profile__heading">
             <h1 class="section-title">Edit Company Profile</h1>
-            <button class="btn btn-primary view-experts-btn">
+            <a href="#rosterList" class="btn btn-primary view-experts-btn">
               Expert Roster
-            </button>
+            </a>
           </div>
         </div>
         <div class="row m-0">
@@ -51,31 +51,45 @@
                 <div class="form-group">
                   <div class="tags-list">
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Cardiology</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Chiropractic</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Neurology</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Neurosurgery</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Occupational Therapy</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Orthopaedic Surgeon</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Psychology</span>
                     </div>
                   </div>
@@ -94,15 +108,21 @@
                 <div class="form-group">
                   <div class="tags-list">
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Calgary</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Mississauga</span>
                     </div>
                     <div class="tags__item">
-                      <button class="tags__remove">+</button>
+                      <div class="tags__remove">
+                        <span>+</span>
+                      </div>
                       <span>Moncton</span>
                     </div>
                   </div>
@@ -154,8 +174,19 @@
                   <div class="form-group form-select">
                     <label for="company_province">Province</label>
                     <select name="company_province" id="company_province">
-                      <option value="on" selected>ON</option>
-                      <option value="off">OFF</option>
+                      <option value="AB" selected>AB</option>
+                      <option value="BC">BC</option>
+                      <option value="MB">MB</option>
+                      <option value="NB">NB</option>
+                      <option value="NL">NL</option>
+                      <option value="NT">NT</option>
+                      <option value="NS">NS</option>
+                      <option value="NU">NU</option>
+                      <option value="ON">ON</option>
+                      <option value="PE">PE</option>
+                      <option value="QC">QC</option>
+                      <option value="SK">SK</option>
+                      <option value="YT">YT</option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -167,7 +198,7 @@
             </div>
           </div>
           <div class="col-md-12 column">
-            <button type="submit" class="edit-profile__save btn btn-primary">Save Profile</button>
+            <button type="submit" class="edit-profile__save btn btn-primary" id="edit-profile-save">Save Profile</button>
           </div>
         </div>
       </div>
@@ -185,7 +216,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="edit-roster__list">
+          <div class="edit-roster__list" id="rosterList">
             <div class="edit-roster__list_header">
               <button class="edit-roster__list_sort" id="sort-name">Expert Name</button>
               <button class="edit-roster__list_sort" id="sort-speciality">Speciality</button>

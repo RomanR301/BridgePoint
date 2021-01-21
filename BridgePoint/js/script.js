@@ -182,4 +182,30 @@ $(document).ready(function() {
     $(".upload-button, .edit-profile-image-btn").on('click', function() {
        $(".file-upload").click();
     });
+
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash;
+	    var $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900);
+    });
+
+
+   
+    $('#edit-profile-save').attr('disabled', true); 
+    $('.edit-page-filled #edit-profile-save').attr('disabled', false); 
+    $('.edit-page input, .edit-page textarea, .edit-page select').on('change', (event) => {
+        event.preventDefault();
+        $('#edit-profile-save').attr('disabled', false);
+    });
+    
+
+    $('.input-file').change(function() {
+        var filepath = this.value;
+        var m = filepath.match(/([^\/\\]+)$/);
+        var filename = m[1];
+        $(this).parent().parent().find('.filename').html(filename);
+    });
 });
