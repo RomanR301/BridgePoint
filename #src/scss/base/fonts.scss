@@ -33,6 +33,7 @@
   background-image: url('../img/icon-rounded-envelope.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   width: 15px;
   height: 10px;
 }
@@ -42,6 +43,7 @@
   background-image: url('../img/icon-rounded-globe.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   width: 16px;
   height: 16px;
 }
@@ -51,8 +53,19 @@
   background-image: url('../img/icon-rounded-phone.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   width: 11px;
-  height: 18px;
+  height: 17px;
+}
+.icon-rounded-person:before {
+  content: '';
+  display: block;
+  background-image: url('../img/icon-rounded-person.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 12px;
+  height: 16px;
 }
 .icon-icon-arrow:before {
   content: "\e900";
