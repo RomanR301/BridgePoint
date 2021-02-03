@@ -29,65 +29,86 @@
       @include defaultIcon(contain);
     }
   }
-  &-user {
+  & .menu-item-has-child {
     cursor: pointer;
     display: flex;
     align-items: center;
     position: relative;
+    &:after {
+      content: '';
+      background: url('../img/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 11px;
+      height: 11px;
+      margin-left: 5px;
+      right: 0;
+    }
     @media (max-width: $breakpoint-lg) {
       margin: 10px 0 0 0;
-    }
-    &-menu {
-      border: 1px solid #D1D1D1;
-      position: absolute;
-      top: 30px;
-      padding: 15px 15px 15px 30px;
-      width: 180px;
-      right: 0;
-      background: #fff;
-      text-align: right;
-      opacity: 0;
-      visibility: hidden;
-      @include transition(.3);
-      @media (max-width: $breakpoint-lg) {
-        right: unset;
-        left: 0;
-        text-align: left;
-      }
-      &.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      & li {
-        margin: 0 0 6px 0;
-        display: inline-block;
-      }
-      & a {
-        position: relative;
-        @include transition(.3);
-        &:before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          opacity: 0;
-          background: $lightBlue;
-          @include transition(.3);
-        }
-        &:hover {
-          color: $lightBlue;
-          &:before {
-            opacity: 1;
-          }
-        }
-      }
     }
   }
 }
 
-
+.header-user {
+  &:after {
+    display: none;
+  }
+}
+.sub-menu {
+  border: 1px solid #D1D1D1;
+  position: absolute;
+  top: 30px;
+  padding: 15px 15px 15px 30px;
+  width: 220px;
+  right: 0;
+  background: #fff;
+  text-align: right;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(.3);
+  z-index: 22;
+  @media (max-width: $breakpoint-lg) {
+    right: unset;
+    left: 0;
+    text-align: left;
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  & li {
+    margin: 0 0 6px 0;
+    display: inline-block;
+  }
+  & a {
+    position: relative;
+    @include transition(.3);
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      opacity: 0;
+      background: $lightBlue;
+      @include transition(.3);
+    }
+    &:hover {
+      color: $lightBlue;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+.header-user {
+  & .sub-menu {
+    width: 180px;
+  }
+}
 .navbar {
   @include transition(.3);
   margin-left: auto;

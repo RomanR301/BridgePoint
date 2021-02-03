@@ -1076,19 +1076,35 @@ label[for="file-upload"] {
   object-fit: contain;
 }
 
-.header-user {
+.header .menu-item-has-child {
   cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.header-user-menu {
+.header .menu-item-has-child:after {
+  content: '';
+  background: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+  right: 0;
+}
+
+.header-user:after {
+  display: none;
+}
+
+.sub-menu {
   border: 1px solid #D1D1D1;
   position: absolute;
   top: 30px;
   padding: 15px 15px 15px 30px;
-  width: 180px;
+  width: 220px;
   right: 0;
   background: #fff;
   text-align: right;
@@ -1098,19 +1114,20 @@ label[for="file-upload"] {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  z-index: 22;
 }
 
-.header-user-menu.active {
+.sub-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-.header-user-menu li {
+.sub-menu li {
   margin: 0 0 6px 0;
   display: inline-block;
 }
 
-.header-user-menu a {
+.sub-menu a {
   position: relative;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -1118,7 +1135,7 @@ label[for="file-upload"] {
   transition: all 0.3s ease-out;
 }
 
-.header-user-menu a:before {
+.sub-menu a:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1133,12 +1150,16 @@ label[for="file-upload"] {
   transition: all 0.3s ease-out;
 }
 
-.header-user-menu a:hover {
+.sub-menu a:hover {
   color: #009ADE;
 }
 
-.header-user-menu a:hover:before {
+.sub-menu a:hover:before {
   opacity: 1;
+}
+
+.header-user .sub-menu {
+  width: 180px;
 }
 
 .navbar {
@@ -2551,11 +2572,11 @@ label[for="file-upload"] {
     width: 200px;
   }
 
-  .header-user {
+  .header .menu-item-has-child {
     margin: 10px 0 0 0;
   }
 
-  .header-user-menu {
+  .sub-menu {
     right: unset;
     left: 0;
     text-align: left;
