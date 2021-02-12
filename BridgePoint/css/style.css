@@ -1369,6 +1369,10 @@ label[for="file-upload"] {
   margin: 24px 0;
 }
 
+.filters-result__content {
+  position: relative;
+}
+
 .filters-result__image {
   filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
   width: 80px;
@@ -1411,6 +1415,36 @@ label[for="file-upload"] {
   width: 100%;
   margin-top: 25px;
   height: 36px;
+}
+
+.filters-result__link {
+  position: absolute;
+  color: #009ADE;
+  display: flex;
+  align-items: center;
+  top: 28px;
+  right: 0;
+  font-size: 14px;
+}
+
+.filters-result__link:before {
+  content: '';
+  background-image: url("../../img/arrow-right-circle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  margin-right: 6px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.filters-result__link:hover:before {
+  transform: translate(2px, 0);
 }
 
 .search-profile {
